@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --color-primary:#D82A47;
+    --color-secondary:#556534;
+    --text-color-primary:#707070;
+    --text-color-secondary:#C5C5C5;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navbar{
+    padding: 3rem 0;
+}
+
+.navbar--content{
+    display: flex;
+    align-items: center;
+    
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.menu li > a{
+    text-decoration: none;
+    color: var(--color-primary);
+    padding: 0 1rem;
+    transition: all ease-in .3s;
+}
+
+.menu li > a:hover{
+    color: var(--text-color-primary);
+}
+
+.btn{
+    border-radius: 50px;
+    padding: 1rem 2rem;
+    border: none;
+    text-transform: capitalize;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.red-btn{
+    margin-left: auto;
+    background-color: var(--color-primary);
+    color: #fff;
+    box-shadow: 10px 10px 20px rgba(216, 42, 71, .3);
+}
+
+.green-btn{
+    background-color: var(--color-secondary);
+    box-shadow: 10px 10px 20px rgba(85, 101, 52, .2);
+    color: #fff;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header--content{
+    display: flex;
+    align-items: center;
+}
+
+.header--content__image{
+    width: 100%;
+    flex: 1 1 50%;
+}
+
+.header--content__text{
+    flex: 1 1 50%;
+}
+
+.header--content__image img{
+    width: 100%;
+}
+
+.heading--primary{
+    margin: 0 0 1rem 0;
+    color: var(--color-primary);
+    font-size: 6rem;
+}
+
+.heading--tertially{
+    margin: 0 0 1rem 0;
+    color: var(--color-primary);
+    font-size: 3rem;
+}
+
+.paragraph{
+    margin: 1rem 0 1rem 0;
+    color: var(--text-color-primary);
+    font-size: 1rem;
+}
+
+.paragraph-modified{
+    color: var(--text-color-secondary) !important;
+}
+
+section{
+    padding: 3rem 0;
+}
+
+.berry--content{
+    display: flex;
+    align-items: center;
+
+}
+
+.berry--content__text{
+    flex: 1 1 50%;
+}
+
+.berry--content__image{
+    flex: 1 1 30%;
+}
+
+.image-one img{
+    width: 100%;
+    transform: rotate(30deg);
+    border: solid 2px var(--color-primary);
+}
+
+.price{
+    color: var(--color-primary);
+    margin: 0 2rem 0 0;
+    font-size: 2rem;
+}
