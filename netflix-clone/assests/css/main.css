@@ -194,19 +194,19 @@ nav.navbar .btn-sigin:hover{
 }
 
 .faqs-content__box ,.faqs-content__box-content{
-    width: 70%;
+    width: 90%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+   
     flex-direction: column;
 }
 
 .faqs-content__box-content .qn{
     display: flex;
     width: 100%;
-    align-items: center;
     background-color: var(--border-bottom-color);
     padding: 1em 1em;
+    align-items: center;
+    color: var(--text-color-light);
 }
 
 .faqs-content__box-content .content{
@@ -214,12 +214,18 @@ nav.navbar .btn-sigin:hover{
     padding: 1em 1em;
     margin: .2em 0 0 0;
     display: block;
-    height: 100%;
+    height: 0;
+    transition: height linear .3s;
+}
+
+.is-open .content{
+    height: auto !important;
 }
 
 .hide{
-    display: none !important;
-    height: 0% !important;
+   height: 0px !important;
+   overflow: hidden;
+   opacity: 0;
 }
 
 /*faqs end*/
