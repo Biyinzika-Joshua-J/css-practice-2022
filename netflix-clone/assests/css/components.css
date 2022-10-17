@@ -1,0 +1,30 @@
+/* Subscription form start */
+
+.subscription-form{
+    width: 65vw;
+    padding: .5em 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscription-form input{
+    padding: 1em 1em;
+    width: 80%;
+    font-size: 1em;
+    outline: none;
+    height: 70px;
+}
+
+.btn-subscription{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    height: 70px;
+    font-size: 1.3em;
+}
+
+.btn-subscription:hover{
+    background-image: linear-gradient(to top right, rgb(184, 22, 22), rgb(238, 14, 14));
+}
+/* Subscription form end */

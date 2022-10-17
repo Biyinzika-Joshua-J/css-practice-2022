@@ -1,6 +1,7 @@
 :root{
     --text-color-light:#fff;
     ---primary-color:red;
+    --border-bottom-color:#222;
 }
 
 * {
@@ -8,3 +9,217 @@
     margin:0;
     box-sizing:border-box;
 }
+
+body{
+    font-family: Verdana, sans-serif;
+    background-color: #000;
+}
+
+header{
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.3)),url('../images/netflix-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    border-bottom: solid 8px var(--border-bottom-color);
+}
+
+/*navbar start*/
+
+nav.navbar{
+    display: flex;
+    align-items: center;
+    padding: 2.5em 0;
+}
+
+nav.navbar .logo{
+    height: 2.5em;
+
+}
+
+nav.navbar .logo img{
+    height: 100%;
+}
+
+nav.navbar .btn-sigin{
+    margin-left: auto;
+    transition: all ease-out 10s;
+}
+
+nav.navbar .btn-sigin:hover{
+    background-image: linear-gradient(to top right, rgb(184, 22, 22), rgb(238, 14, 14));
+}
+
+/*navbar end*/
+
+/*header text start*/
+
+.header-text{
+    color: var(--text-color-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 8% 0 0 0;
+}
+
+.heading-paragraph{
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+}
+
+
+/*header text end*/
+
+/* enjoy section start*/
+.enjoy{
+    color: var(--text-color-light);
+    border-bottom: var(--border-bottom-color) solid 8px;
+}
+
+.enjoy-tv{
+    position: relative;
+}
+
+.enjoy-tv img{
+   height: auto;
+   max-width: 100%;
+   z-index: 1000;
+}
+
+.enjoy-tv__video{
+   max-width: 70%;
+   max-height: 50%;
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   top: 46%;
+   left: 49%;
+   transform: translate(-50%, -50%);
+}
+
+.enjoy-tv__video video{
+   width: 100%;
+   height: 100%;
+
+}
+
+/* enjoy section end*/
+
+/*download start*/
+.download{
+    color: var(--text-color-light);
+    border-bottom: var(--border-bottom-color) solid 8px;
+}
+
+.download-phone{
+    max-width: 95%;
+    max-height: 95%;
+    position: relative;
+}
+
+.download-phone img{
+    height: 100%;
+    width: 100%;
+}
+
+.download-phone__box{
+    position: absolute;
+    top: 88%;
+    left: 20%;
+    transform: translate(-10%, -80%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    background-color: #000;
+    border: solid 3px var(--border-bottom-color);
+    border-radius: 10px;
+    padding: .1em .5em;
+}
+
+.download-phone__box-image{
+    max-width: 20%;
+    max-height: 20%;
+}
+
+.download-phone__box-image img{
+    height: 100%;
+    width: 100%;
+}
+
+
+/*download end*/
+
+/*watch start*/
+.watch{
+    border-bottom: var(--border-bottom-color) 8px solid;
+    color: var(--text-color-light);
+    padding: 1em 0;
+}
+
+.watch-text{
+    width: 50%;
+}
+/* watch end*/
+
+/* kids start */
+.kids{
+    color: var(--text-color-light);
+    border-bottom: var(--border-bottom-color) solid 8px;
+}
+/*kids end*/
+
+/*faqs start*/
+.faqs{
+    color: var(--text-color-light);
+    padding: 2em 0;
+}
+
+.faqs-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.svg-icon-thin-x{
+   fill: var(--text-color-light);
+   height: 40px;
+   margin-left: auto;
+   transform: rotate(45deg);
+}
+
+.svg-closed{
+    transform: rotate(90deg);
+}
+
+.faqs-content__box ,.faqs-content__box-content{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.faqs-content__box-content .qn{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color: var(--border-bottom-color);
+    padding: 1em 1em;
+}
+
+.faqs-content__box-content .content{
+    background-color: var(--border-bottom-color);
+    padding: 1em 1em;
+    margin: .2em 0 0 0;
+    display: block;
+    height: 100%;
+}
+
+.hide{
+    display: none !important;
+    height: 0% !important;
+}
+
+/*faqs end*/

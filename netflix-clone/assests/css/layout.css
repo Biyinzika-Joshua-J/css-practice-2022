@@ -21,6 +21,7 @@
     display: flex;
     margin: var(--row-margin-top) 0;
     flex-wrap: wrap;
+    align-items: center;
    }
 
 .col-1-of-2{
