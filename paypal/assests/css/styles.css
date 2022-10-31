@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-color:#0070ba;
+    --secondary--color:#003087;
+    --color-light:#fff;
+}
+
+.navbar-container{
+    position: relative;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;
+    padding: 1rem 0;
+}
+
+.logo{
+    background-image: url('../images/logo-paypal.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 49px;
+    width: 200px;
+
+}
+
+.navbar-items{
+ background-color: var(--secondary--color);   
+ border-bottom: #fff solid 2px;
+ height: 0;
+ overflow: hidden;
+ transition: all .3s;
+}
+
+.navbar-items__content{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.navbar-items__content .navbar-col div:not(:first-child){
+    padding-top: 10px;
+}
+
+.navbar-items__content a p{
+    font-size: 1rem;
+    padding: 5px 0;
+}
+
+.navbar-items__content a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-close__layout{
+    color: #fff;
+    font-size: 2rem;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.btn-close__layout:active{
+    transform: scale(.9);
+}
+
+.btn-login{
+    border:var(--primary-color) solid 2px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: var(--primary-color);
+    margin: 0 1rem 0 0;
+}
+
+.btn-signup{
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    color: var(--color-light);
+}
+
+.personal-dropdown span{
+    display: flex;
+    align-items: center;
+}
+
+
+
+.personal-dropdown span{
+    font-size: 1.5rem;
+}
+
+.personal-dropdown span .arrow{
+    box-sizing: border-box;
+    opacity: .75;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    border: #000 solid 2px;
+    margin: 0 1rem;
+    border-left: none;
+    border-top: none;
+    transform: rotate(45deg);
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.personal-dropdown .arrow:hover{
+   transform: rotate(225deg);
+}

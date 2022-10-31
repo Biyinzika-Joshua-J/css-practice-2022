@@ -1,0 +1,127 @@
+/*flexbox grid*/
+:root{
+    --row-margin-top:0em;
+    --horizontal-gutter:2em;
+    --vertical-gutter:1em;
+    --row-width-wide:1000px;
+}
+
+.column{
+    height: 100px;
+    width: 100%;
+    background-color: red;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+   }
+
+.col-1-of-2{
+    flex: 1 1 calc((var(--row-width-wide) - (var(--horizontal-gutter)))/2);
+    margin: 1em 0;
+}
+
+.col-1-of-2:not(:last-child){
+    margin-right: var(--horizontal-gutter);
+}
+
+.col-1-of-3{
+    flex: 1 1 calc((var(--row-width-wide) - (var(--horizontal-gutter)*2))/3);
+    margin: 1em 0;
+}
+
+.col-1-of-3:not(:last-child){
+    margin-right: var(--horizontal-gutter);
+}
+
+.col-2-of-3{
+    flex: 1 1 calc(2*((var(--row-width-wide) - (var(--horizontal-gutter)))/3 + 2*var(--horizontal-gutter)));
+    margin: 1em 0;
+}
+
+.col-2-of-3:not(:last-child){
+    margin-right: var(--horizontal-gutter);
+}
+
+
+.col-1-of-4{
+    flex: 1 1 calc((var(--row-width-wide) - (var(--horizontal-gutter)*3))/4);
+    margin: 1em 0;
+}
+
+.col-1-of-4:not(:last-child){
+    margin-right: var(--horizontal-gutter);
+}
+
+.col-2-of-4{
+    flex: 1 1 calc(2*((var(--row-width-wide) - (var(--horizontal-gutter)*2))/4) + 2*var(--horizontal-gutter));
+    margin: 1em 0;
+}
+
+.col-2-of-4:not(:last-child){
+    margin-right: var(--horizontal-gutter);
+}
+
+.col-3-of-4{
+    flex: 1 1 calc((3*(var(--row-width-wide) - (var(--horizontal-gutter)))/4) + 3*var(--horizontal-gutter));
+    margin: 1em 0;
+}
+
+.col-3-of-4:not(:last-child){
+    margin-right: var(--horizontal-gutter);
+}
+
+@media (max-width:800px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+@media (max-width:500px){
+    .row{
+      
+    }
+
+    .col-1-of-2{
+      background-color: red;
+      flex: 1 1 calc((400px - (var(--horizontal-gutter)))/2);
+     
+    }
+    
+    .col-1-of-3{
+       
+    }
+    
+  
+    
+    .col-2-of-3{
+       
+    }
+    
+   
+    
+    
+    .col-1-of-4{
+       
+    }
+    
+    
+    
+    .col-2-of-4{
+       
+    }
+    
+    
+    
+    .col-3-of-4{
+       
+    }
+    
+  
+}
