@@ -33,11 +33,14 @@
 }
 
 .navbar-items{
+position: absolute;
+left: 0;
+right: 0;
  background-color: var(--secondary--color);   
  border-bottom: #fff solid 2px;
  height: 0;
  overflow: hidden;
- transition: all .3s;
+ transition: all linear .3s;
 }
 
 .navbar-items__content{
@@ -117,4 +120,59 @@
 
 .personal-dropdown .arrow:hover{
    transform: rotate(225deg);
+}
+
+/*hero section*/
+.hero{
+    height: 65vh;
+    background-image: linear-gradient(to right, rgba(46, 45, 45, 0.322), rgba(46, 45, 45, 0.322)), url('../images/homepage-hero-paypal.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.hero-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    color: #fff;
+}
+
+.hero-btn{
+    margin: 3rem 0;
+}
+
+
+.hero-btn-custom{
+    padding: 15px 30px;
+}
+
+.hero-cta{
+    font-size: 1.2rem;
+}
+
+.hero-cta a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.hero-cta a:hover{
+    text-decoration: underline;
+}
+
+/*audience*/
+.audience{
+    padding: 5rem 0;
+}
+
+.audience-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }

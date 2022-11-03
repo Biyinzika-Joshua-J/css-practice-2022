@@ -3,7 +3,6 @@ const navBarItems = document.querySelector('.navbar-items');
 
 const openNavBarItems = function(e){
    navBarItems.style.height = 'auto';
-   console.log(e)
 }
 
 const closeNavbarItems = function(e){
